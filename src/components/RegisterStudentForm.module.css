@@ -1,0 +1,90 @@
+/* RegisterStudentForm.module.css */
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #3f87a6, #ebf8e1); /* Optional gradient background */
+  }
+  
+  .formWrapper {
+    background: rgba(255, 255, 255, 0.1); /* Semi-transparent white background */
+    border-radius: 15px;
+    padding: 30px;
+    width: 100%;
+    max-width: 400px;
+    backdrop-filter: blur(10px); /* Glassmorphism blur effect */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .title {
+    color: white;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .inputGroup {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .inputGroup label {
+    color: #fff;
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+  
+  .inputGroup input {
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    font-size: 16px;
+    width: 100%;
+    transition: background 0.3s ease;
+  }
+  
+  .inputGroup input:focus {
+    background: rgba(255, 255, 255, 0.3); /* Slightly lighter background on focus */
+    outline: none;
+  }
+  
+  .submitButton {
+    background: #3f87a6;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    width: 100%;
+  }
+  
+  .submitButton:hover {
+    background: #ebf8e1; /* Hover effect */
+    color: #3f87a6;
+  }
+  
+  .submitButton:disabled {
+    background: rgba(63, 135, 166, 0.5); /* Disabled button style */
+    cursor: not-allowed;
+  }
+  
+  .error {
+    color: #ff4d4d;
+    font-size: 14px;
+    margin-top: 10px;
+  }
+  
+  .success {
+    color: #4caf50;
+    font-size: 14px;
+    margin-top: 10px;
+  }
+  

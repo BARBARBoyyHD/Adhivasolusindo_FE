@@ -1,0 +1,35 @@
+.Content{
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background: rgb(201, 198, 198);
+}
+.bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.button{
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #2e0455;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.button:hover{
+    cursor: pointer;
+    background-color: #7227b8;
+    color: white;
+    border: none;
+}
+.modul{
+
+}
+.listOfModul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+}
