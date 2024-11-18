@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom'; // Import useNavigate
 import { fetchMateri } from '../redux';
 import styles from "./GetAllModule.module.css"
+import LoadingSpinner from './spinner/LoadingSpinner';
 
 const GetAllModule = () => {
     const dispatch = useDispatch();
@@ -16,7 +17,7 @@ const GetAllModule = () => {
 
     return (
         <div className={styles.listOfModul}>
-            {loading && <p>Loading...</p>}
+            {loading && <LoadingSpinner />}
             {error && <p>Error: {error}</p>}
             <div className={styles.wrapAllModul}>
                 {data && data.length > 0 ? (
